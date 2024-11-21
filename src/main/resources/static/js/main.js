@@ -55,7 +55,7 @@ function onMessageReceived(payload){
 
     if(message.type === 'JOIN'){
         messageElement.classList.add('event-message');
-        message.content = message.sender + 'joined the conversation';
+        message.content = message.sender + ' joined the conversation';
     }
     else if(message.type === 'LEAVE'){
         messageElement.classList.add('event-message');
