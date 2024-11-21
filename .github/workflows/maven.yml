@@ -41,10 +41,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t shadowcruv/chat:latest .
+        run: docker build -t shadowcruv/text:latest .
 
       - name: list docker images
         run: docker images
 
       - name: Push Docker image
-        run: docker push shadowcruv/chat:latest
+        run: docker push shadowcruv/text:latest
